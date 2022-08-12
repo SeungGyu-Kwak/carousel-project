@@ -1,0 +1,55 @@
+.slider-area {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  height: 100vh;
+  background-color: antiquewhite;
+  justify-content: center;
+  align-items: center;
+}
+.slider-area .slider {
+  position: relative;
+  display: block;
+  width: 70vw;
+  background-color: aquamarine;
+}
+.slider-area .slider .btn-slide-control {
+  position: absolute;
+  top: 50;
+}
+.slider-area .slider .btn-slide-control.btn-prev {
+  transform: rotate(180deg);
+  left: 0;
+}
+.slider-area .slider .btn-slide-control.btn-next {
+  right: 0;
+}
+.slider-area .slider .slider-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+}
+.slider-area .slider .slider-list .slider-track {
+  position: relative;
+  display: flex;
+  background-color: aqua;
+  height: 500px;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: left;
+  left: 50%;
+  transition: all 1s;
+}
+.slider-area .slider .slider-list .slider-track .slider-item {
+  position: relative;
+  padding: 0 12px;
+  float: left;
+}
+.slider-area .slider .slider-list .slider-track .slider-item .item {
+  width: 500px;
+  height: 300px;
+  text-align: center;
+}/*# sourceMappingURL=slider.css.map */

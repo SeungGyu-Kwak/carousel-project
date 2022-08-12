@@ -1,0 +1,20 @@
+.btn-slide-control {
+  // position: absolute;
+  top: calc(50% - 30px);
+  padding: 20px 4px;
+  z-index: 1;
+  background-color: white;
+  width: 30px;
+  height: 60px;
+  opacity: 0.5;
+  border-radius: 15px;
+
+  &.btn-prev {
+    transform: rotate(180deg);
+    left: calc((100% - 1200px) / 2);
+  }
+
+  &.btn-next {
+    right: calc((100% - 1200px) / 2);
+  }
+}
