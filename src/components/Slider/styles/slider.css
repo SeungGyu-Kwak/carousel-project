@@ -41,7 +41,6 @@
   width: fit-content;
   text-align: left;
   left: 50%;
-  transition: all 1s;
 }
 .slider-area .slider .slider-list .slider-track .slider-item {
   position: relative;
