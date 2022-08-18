@@ -24,6 +24,7 @@ const Slider = ({
   itemIndex,
   items,
 }: Props) => {
+  console.log('slidesLength', slides.length);
   return (
     <div className='slider-area'>
       <div className='slider'>

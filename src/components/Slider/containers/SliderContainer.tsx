@@ -1,6 +1,7 @@
 import {
   useCallback,
   useEffect,
+  useId,
   useLayoutEffect,
   useMemo,
   useState,
@@ -66,10 +67,17 @@ const SliderContainer = () => {
   };
 
   useLayoutEffect(() => {
-    setSlides((prev: any[]) => [...prev.slice(0, 2), ...prev, prev.slice(1)]);
+    if (slides) {
+      setSlides((prev: any[]) => [
+        ...prev.slice(-2),
+        ...prev,
+        ...prev.slice(0, 2),
+      ]);
+    }
+
     handleSwipe(-1);
   }, []);
-  console.log(slides.length);
+
   return (
     <Slider
       slides={slides}
